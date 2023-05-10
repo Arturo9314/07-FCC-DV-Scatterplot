@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize Data with a Scatterplot Graph</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <svg id="canvas">
+            <text id="title", x="290" y="25">Doping in Professional Bicycle Racing</text>
+            <text id="subtitle", x="375" y="45">35 Fastest times up Alpe d'Huez</text>
+            <text transform="rotate(-90)" x="-300" y="25" class="legend">Time in Minutes</text>
+        </svg>
+        <div id='legend'>
+            <div id="no-doping">
+                <p>No doping allegations</p>
+                <div class='square'></div>
+            </div>
+            <div id="doping">
+                <p>Riders with doping allegations</p>
+                <div class='square'></div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./script.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
